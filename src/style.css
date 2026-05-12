@@ -1,0 +1,52 @@
+:root{
+    --text:#ffffff;
+    --qb: #e7ecef;
+    --ae: #274c77;
+    --ag: #6096ba;
+    --ac: #a3cef1;
+    --cin: #8b8c89;
+    --font: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--ae);
+    color: var(--text);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    height: 100px;
+    z-index: 999;
+    animation: decima 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+nav.sc{
+    background-color: var(--qb);
+}
+
+@keyframes decima{
+    0%{
+        transform: translateY(-100px);
+    }
+}
+
+section{
+    min-height: 100vh;
+    height: auto;
+}
