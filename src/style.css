@@ -162,6 +162,36 @@ footer a img:hover{
     transform: translateY(-5px) scale(1.1) rotate(360deg);
 }
 
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+#s21{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid{
+    width: 1000px;
+    height: 500px;
+}
 
 @media (width <= 1000px){
     .navWords{
