@@ -96,6 +96,8 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 h1{
@@ -162,35 +164,46 @@ footer a img:hover{
     transform: translateY(-5px) scale(1.1) rotate(360deg);
 }
 
-.texto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px;
-}
-
-#s21{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.vid{
+    width: 1000px;
+    height: 500px;
 }
 
 #s2{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    gap: 50px;
+    color: var(--text);
+    margin-top: -10vh; 
+    padding-top: 10vh;
+    position: relative;
+    z-index: 2;
+}
 
+.card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #s3{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.vid{
-    width: 1000px;
-    height: 500px;
 }
 
 @media (width <= 1000px){
