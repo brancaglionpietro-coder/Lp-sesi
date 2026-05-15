@@ -87,7 +87,7 @@ section{
 }
 
 #s1{
-    background-image: url(../assets/images/photo-1724391114112-c83ad59f1d5f.avif);
+    background-image: url(../assets/images/pf2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +147,7 @@ footer{
     bottom: 0;
     width: 100%;
     transition: all 1s ease-in-out;
+    z-index: 999;
 }
 
 footer.ft{
